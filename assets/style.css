@@ -1,0 +1,115 @@
+:root {
+ --blue: #3366ff;
+ --pale: #ccccff;
+
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+header,
+footer {
+  background-color: var(--blue);
+  color: var(--pale);
+
+}
+
+header h1{
+display: flex;
+justify-content: left;
+margin-left: 100px;
+font-size: 30px;
+}
+nav {
+  background-color: var(--blue);
+  color: var(--pale);
+}
+nav ol li{
+display: flex;
+flex: wrap;
+justify-content: left;
+float: right;
+border: solid 2px var(--pale);
+margin: 5px;
+}
+
+body{
+
+}
+
+.backround{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/mandelbulb-cover.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.summary{
+
+}
+
+h2{
+font-size: 30px;
+}
+
+.projectCards ul{
+  display: grid;
+  grid-template-columns: repeat(2 ,45%);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.projectCards ul li{
+  width: 40%;
+  height: 40px;
+  color: var(--pale);
+  border: solid 2px var(blue);
+  justify-items: center;
+}
+.projectCards ul li:hover{
+  animation-name: zoom; 
+  animation-duration: .5s;
+}
+
+@keyframes zoom {
+  25% {transform: scale(105%)};
+  100% {transform: scale(120%);}
+}
+.item1{
+  background-image: url(../images/th.jpg);
+}
+.item2{
+  background-image: url(../images/th.jpg);
+}
+.item3{
+  background-image: url(../images/th.jpg);
+}
+.item4{
+  background-image: url(../images/th.jpg);
+}
+
+.contact{
+
+}
+
+.footer{
+
+}
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
